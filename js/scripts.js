@@ -1,12 +1,9 @@
-var values = [];
-var inputArray = values.slice();
+var values = [""];
+var inputResponse = [];
 
 $(document).ready(function() {
-  $("form#mainForm").submit(function(event) {
+  $("form#submit_Form").submit(function(event) {
   event.preventDefault();
-  var values = $("#inputNumber").val();
-  inputArray = values.push(function(values) {
-
-  })
+  var inputValues = $("input#")
   });
 });
