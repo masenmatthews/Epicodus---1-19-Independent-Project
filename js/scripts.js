@@ -1,14 +1,10 @@
-var input = "";
-var inputResponse = [];
+var figures = "";
 
 $(document).ready(function() {
-  $("form#submit_Form").submit(function(event) {
+  $("form#entryForm").submit(function(event) {
   event.preventDefault();
-  input = $("input#numericalInput").val();
-  var inputArray = input.split("");
-  for (var index=0; index < inputArray.length; index += 1) {
-
-  }
-
+    figures = $("input#numEntry").val();
+    var figureArray = Array.from(figures);
+    
   });
 });
