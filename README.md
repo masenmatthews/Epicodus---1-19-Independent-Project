@@ -11,12 +11,20 @@ This application uses a form to take numerical inputs from users. If a number co
 ## Specifications
 
 * Program replaces 0 with "Beep!"
-    Example input: 0
-    Example output: ["Beep!"]
+    * Example input: 0
+    * Example output: ["Beep!"]
 * Program replaces 1 with "Boop!"
-    Example input: 1
-    Example output: ["Boop!"]
-*
+    * Example input: 1
+    * Example output: ["Boop!"]
+* Program replaces any number containing 0 with "Beep!"
+    * Example input: 205325
+    * Example output: ["Beep!"]
+* Program replaces any number containing 1 with "Boop!"
+    * Example input: 135729
+    * Example output: ["Boop!"]
+* Program replaces numbers that are divisible by 3 with "I'm sorry, Dave. I can't do that!"
+    * Example input: 3000
+    * Example output: ["I'm sorry, Dave. I can't do that!"]
 
 ## Setup/Installation Requirements
 
@@ -34,7 +42,7 @@ Inquires cam be directed to Masen at masenmatthews@gmail.com
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+This program utilizes HTML, CSS, Bootstrap, JavaScript, and jQuery. 
 
 ### License
 
