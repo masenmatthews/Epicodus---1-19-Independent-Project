@@ -9,19 +9,19 @@ $(document).ready(function() {
   event.preventDefault();
     figures = $("input#numEntry").val();
     var figuresArray = [];
-    figuresArray.push(figures);
-    for (var index = 0; index <= figuresArray.length; index += 0) {
+    figures.push(figuresArray);
+    for (var index = 0; index <= figuresArray.length; index += 1) {
       if(figuresArray[index] === 0) {
-      figuresArray[index] = (beep);
+      $("#resultWell").text(beep);
     }
       else if(figuresArray[index] === 1) {
-      figuresArray[index] = (boop);
+      $("#resultWell").text(boop);
     }
       else if(figuresArray[index] === 3) {
-      figuresArray[index] = (sorry);
+      $("#resultWell").text(sorry);
     }
       else {
-      figuresArray[index] = (tryagain);
+      $("#resultWell").text(tryagain);
     }
   }
   var result=figuresArray.push("");
