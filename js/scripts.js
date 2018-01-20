@@ -9,7 +9,7 @@ $(document).ready(function() {
   event.preventDefault();
     figures = $("input#numEntry").val();
     var figuresArray = [];
-    figures.push(figuresArray);
+    figuresArray.push(figures);
     for (var index = 0; index <= figuresArray.length; index += 1) {
       if(figuresArray[index] === 0) {
       $("#resultWell").text(beep);
