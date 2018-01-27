@@ -1,8 +1,6 @@
-var figures = "";
-var beep = ("beep!");
-var boop = ("boop!");
-var sorry = ("Sorry, Dave. I can't do that!");
-var tryagain = ("Try again!");
+
+
+
 
 $(document).ready(function() {
   $("form#entryForm").submit(function(event) {
