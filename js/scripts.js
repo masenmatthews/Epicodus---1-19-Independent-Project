@@ -1,19 +1,19 @@
 // back end
 var mainArray = [];
+var beepBoop = [];
 
-var beepBoopArray = function() {
-var i = 0;
-for (var i = 0; i <= beepBoopArray.length; i += 1) {
-  if (beepBoopArray[i] === 0) {
+var beepBoop = function(mainArray) {
+for (var index = 0; index <= mainArray.length; index += 1) {
+  if (mainArray[index] === 0) {
     mainArray.push("Beep!");
-  } else if (beepBoopArray[i] === 1) {
+  } else if (mainArray[index] === 1) {
     mainArray.push("Boop!");
-  } else if (beepBoopArray[i] === 3) {
+  } else if (mainArray[index] === 3) {
     mainArray.push("Sorry, Dave. I can't do that!");
   } else {
-    mainArray.push(beepBoopArray);
+    mainArray.push(mainArray[index]);
   }
-  return mainArray;
+    return mainArray;
   }
 };
 
@@ -21,8 +21,9 @@ for (var i = 0; i <= beepBoopArray.length; i += 1) {
 $(document).ready(function() {
   $("form#entry-form").submit(function(event) {
     event.preventDefault();
-    beepBoopArray();
+    beepBoop(mainArray);
     var mainArray = $("#num-entry").val();
-    $("#result-well").text($("<h1>" + mainArray + "</h1>"));
+    $("#result-well").text($(mainArray));
+    this.reset();
   });
 });
