@@ -35,7 +35,7 @@ This application uses a form to take numerical inputs from users. If a number co
 
 ## Known Bugs
 
-There are currently no known bugs in the program.
+Entering a number that is too high may cause the web browser to crash. Program works best with numbers that are less than 1000.
 
 ## Support and contact details
 

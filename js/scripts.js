@@ -2,7 +2,7 @@
 var beepBoop = function(value) {
   var mainArray = [];
   for (var i = 0; i <= value; i+=1) {
-  if (i % 3 === 0 && i != 0) {
+  if (i % 3 === 0 && i !== 0) {
       mainArray.push("Sorry, Dave. I can't do that!");
   } else if (i === 1) {
       mainArray.push("Boop!");
