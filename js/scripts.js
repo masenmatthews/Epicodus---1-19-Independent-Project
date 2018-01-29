@@ -1,15 +1,16 @@
 // business
+var mainArray = [];
+
 var beepBoop = function(value) {
-  var mainArray = [];
-  for (var i = 0; i <= value.length; i++) {
+  for (var i = 0; i <= value; i++) {
   if (value === 3) {
       mainArray.push("Sorry, Dave!");
   } else if (value === 1) {
       mainArray.push("Boop!");
   } else if (value === 0) {
-      mainArray.push("beep");
+      mainArray.push("Beep");
   } else {
-      return mainArray;
+      return value;
     }
   };
 };
@@ -18,10 +19,10 @@ var beepBoop = function(value) {
 $(document).ready(function() {
   $("form#entry-form").submit(function(event) {
     event.preventDefault();
-    var value = $("#num-entry").val();
-    mainArray.push(value);
-    beepBoop(mainArray);
+    var inputValue = $("#num-entry").val();
+    beepBoop(inputValue);
+    mainArray.push(inputValue);
     $("#result-well").text(mainArray);
-    console.log(mainArray);
   });
+    console.log(mainArray);
 });
